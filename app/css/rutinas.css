@@ -10,8 +10,8 @@
     --mañana: #FFD93D;
     --tarde: #6BCB77;
     --noche: #6C5CE7;
-    --shadow: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Reset */
@@ -57,6 +57,8 @@ body {
 
 .nav {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -98,7 +100,7 @@ body {
 .hero h2 {
     font-size: 48px;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero p {
@@ -126,7 +128,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
@@ -332,8 +334,13 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .modal-content {
@@ -351,6 +358,7 @@ body {
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -521,19 +529,17 @@ body {
     .hero h2 {
         font-size: 32px;
     }
-    
+
     .hero p {
         font-size: 16px;
     }
-    
+
     .grid {
         grid-template-columns: 1fr;
     }
-    
-    .nav {
-        display: none;
-    }
-    
+
+
+
     .form-row {
         grid-template-columns: 1fr;
     }
