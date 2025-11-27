@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/pagina.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="navbar">
+            <div class="logo">MindEase</div>
+            <nav>
+                <a href="#sobre-nosotros" class="fast-access">Sobre Nosotros</a>
+                <a href="rutinas.html" class="fast-access">Rutinas</a>
+                <a href="cita.html" class="fast-access">Citas</a>
+                <a href="frases.html" class="fast-access">Frases</a>
+                <a href="#contacto" class="fast-access">Contacto</a>
+                <a href="login.html" class="login-button" id="iniciar_sesion">Iniciar sesion</a>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="hero-text">
+                <p class="subtitle">ACEPTA EL CAMBIO</p>
+                <h1>SALUD MENTAL PARA TODOS</h1>
+                <button id="rutinas" class="cta-button">Ver Rutinas</button>
+            </div>
+            <div class="hero-image-container">
+                <div class="image-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3998/3998035.png" alt=" cerebro">
+                </div>
+            </div>
+        </main>
+        <hr class="split">
+
+        <section class="about" id="sobre-nosotros">
+            <h2>SOBRE NOSOTROS</h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <h3>Nuestra Misión</h3>
+                    <p>En <strong>MindEase</strong>, creemos que la salud mental es un derecho fundamental. Nos
+                        dedicamos a proporcionar apoyo profesional, accesible y personalizado para ayudar a las personas
+                        a encontrar equilibrio y bienestar en sus vidas.</p>
+                </div>
+
+                <div class="about-vision">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser la plataforma líder en salud mental digital en Costa Rica, eliminando barreras de acceso y
+                        estigmas, creando una comunidad donde cada persona pueda encontrar el apoyo que necesita para
+                        prosperar emocionalmente.</p>
+                </div>
+            </div>
+
+            <div class="values">
+                <h3>Nuestros Valores</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">💙</div>
+                        <h4>Empatía</h4>
+                        <p>Escuchamos y comprendemos las necesidades únicas de cada persona con respeto y compasión.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h4>Profesionalismo</h4>
+                        <p>Contamos con un equipo de especialistas certificados comprometidos con la excelencia en el
+                            cuidado.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌟</div>
+                        <h4>Accesibilidad</h4>
+                        <p>Facilitamos el acceso a servicios de salud mental de calidad para todos, sin importar su
+                            ubicación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="split">
+
+        <section class="team">
+            <h2>NUESTRO EQUIPO</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="https://previews.123rf.com/images/lizardfilms/lizardfilms1712/lizardfilms171200452/91496062-man-psychologist-specialist-professional-doctor-in-the-office.jpg"
+                        alt="Miembro 1">
+                    <h3>Alex Gómez</h3>
+                    <p>Psicologo</p>
+                </div>
+                <div class="member">
+                    <img src="https://elmundodemozart.com/wp-content/uploads/2024/12/pediatra-en-guarderia.webp"
+                        alt="Miembro 2">
+                    <h3>Carlos Mena</h3>
+                    <p>Pediatra</p>
+                </div>
+                <div class="member">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndgIQutI6KBuW_fE45MSfjPiXZMBw92_5uQ&s"
+                        alt="Miembro 3">
+                    <h3>Carlos Vega</h3>
+                    <p>Psiquiatra</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="split">
+
+        <section class="contact" id="contacto">
+            <h2>CONTÁCTANOS</h2>
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <h3>Envíanos un mensaje</h3>
+                    <form method="post" class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+506 1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required
+                                placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">📧</div>
+                            <h4>Email</h4>
+                            <p>contacto@mindease.com</p>
+                            <p>soporte@mindease.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📱</div>
+                            <h4>Teléfono</h4>
+                            <p>+506 2222-3333</p>
+                            <p>+506 8888-9999</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h4>Ubicación</h4>
+                            <p>San José, Costa Rica</p>
+                            <p>Lun - Vie: 8am - 6pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    dy>
+
+</html>

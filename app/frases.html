@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Motivadoras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/frases.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Navegación -->
+        <header class="navbar">
+            <div class="logo">DAR.</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="frases.html">Frases</a>
+                <a href="#" class="contact-button">Contacto</a>
+                <a href="login.html">Iniciar sesión</a>
+            </nav>
+        </header>
+
+        <!-- Contenido Principal -->
+        <section class="frases-section">
+            <div class="frases-header">
+                <p class="subtitle">CUIDA TU SALUD MENTAL</p>
+                <h1>Frases Motivadoras</h1>
+            </div>
+
+            <!-- Formulario para agregar frase -->
+            <div class="formulario-agregar">
+                <h3>Agregar Nueva Frase</h3>
+                <input type="text" id="textoFrase" placeholder="Escribe una frase motivadora...">
+                <input type="text" id="autorFrase" placeholder="Autor (opcional)">
+                <button class="cta-button" onclick="agregarFrase()">Agregar Frase</button>
+            </div>
+
+            <!-- Lista de Frases -->
+            <div class="frases-container" id="listaFrases">
+                <!-- Las frases aparecerán aquí -->
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/frases.js"></script>
+</body>
+</html>
